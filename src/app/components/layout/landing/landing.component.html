@@ -3,3 +3,13 @@
 <div class="grid w-full">
     <ng-content></ng-content>
 </div>
+
+<p-dialog id="spinnerLoading" [(visible)]="ShowLoading" [closable]="false" [showHeader]="false" [modal]="true"
+    [position]="'top'">
+    <div class="flex items-center gap-3">
+        <p-progressSpinner styleClass="spinner"></p-progressSpinner>
+        <p class="text-gray-500 text-sm">
+            Data Sedang Dimuat...
+        </p>
+    </div>
+</p-dialog>

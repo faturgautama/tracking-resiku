@@ -1,7 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
 import * as AOS from 'aos';
 import { ToastModule } from 'primeng/toast';
@@ -18,7 +17,7 @@ import { environment } from '../environments/environment.prod';
     imports: [
         RouterOutlet,
         CommonModule,
-        // BrowserAnimationsModule,
+        // NoopAnimationsModule,
         HttpClientModule,
         ToastModule,
         ProgressBarModule
